@@ -1,1 +1,14 @@
-<p>product-page works!</p>
+<div class="container">
+  <div class="left-column">
+    <app-product-list
+      [products]="productService.getProducts()"
+      (deleteProduct)="onProductDeleted($event)"
+    ></app-product-list>
+  </div>
+
+  <div class="right-column">
+    <app-product-form
+      (productCreated)="onProductCreated($event)"
+    ></app-product-form>
+  </div>
+</div>

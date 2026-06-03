@@ -1,0 +1,21 @@
+.product-list h2 {
+    margin-bottom: 20px;
+    color: #181717;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #313131;
+}
+
+.warning-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.products-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}

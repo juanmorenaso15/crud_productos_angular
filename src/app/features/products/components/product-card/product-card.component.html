@@ -1,1 +1,9 @@
-<p>product-card works!</p>
+<div class="product-card">
+    <div class="product-info">
+        <h3 class="product-name">{{ product.nombre }}</h3>
+        <p class="product-price"> ${{ product.precio }}</p>
+    </div>
+    <button class="delete-btn" (click)="$event.stopPropagation(); delete.emit()">
+        Eliminar
+    </button>
+</div>
